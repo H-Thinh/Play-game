@@ -1,0 +1,68 @@
+.container {
+    margin: auto;
+    width: 1200px;
+
+}
+
+.header-game {
+    width: 200px;
+    margin: auto;
+}
+
+.time,
+.points {
+    display: flex;
+    align-items: center;
+}
+
+.time p,
+.points p {
+    margin-right: 30px;
+}
+
+.points input {
+    height: 20px;
+}
+
+.time span {
+    float: right;
+}
+
+.btn-game {
+    margin-bottom: 10px;
+
+}
+
+.frame-game {
+    position: relative;
+    border: 2px solid black;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.frame-game li {
+    position: absolute;
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid orange;
+    border-radius: 50%;
+}
+
+.frame-game li p {
+    margin: 0;
+}
+
+.frame-game li span {
+    font-size: 11px;
+}
+
+.point-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}

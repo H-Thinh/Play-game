@@ -175,10 +175,6 @@ function Playgame() {
             i === index ? { ...pos, isVisible: false } : pos
           )
         );
-        setNextRemoveIndex(index + 1);
-
-        // Nếu chưa hết vòng, chạy vòng tiếp theo
-        runCircle(index + 1);
 
         if (index === input - 1) {
           setPositions([]);
@@ -190,6 +186,17 @@ function Playgame() {
         }
       }, 3000);
       timeoutRef.current.push(removeTimeout);
+
+      const continueTimeout = setTimeout(() => {
+        if (index === input - 1) {
+        } else {
+          setNextRemoveIndex(index + 1);
+        }
+
+        // Nếu chưa hết vòng, chạy vòng tiếp theo
+        runCircle(index + 1);
+      }, 1000);
+      timeoutRef.current.push(continueTimeout);
     }
 
     runCircle(0); // bắt đầu từ index 0

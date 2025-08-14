@@ -47,8 +47,8 @@ function Playgame() {
   }
 
   function randomPosition() {
-    const x = Math.floor(Math.random() * 473); // làm tròn số và radom vị trí
-    const y = Math.floor(Math.random() * 473);
+    const x = Math.floor(Math.random() * (467 - 5 + 1)) + 5; // làm tròn số và radom vị trí
+    const y = Math.floor(Math.random() * (467 - 5 + 1)) + 5;
     return { top: y + "px", left: x + "px" };
   }
 
